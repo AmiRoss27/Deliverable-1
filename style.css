@@ -1,0 +1,146 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:focus {
+    outline: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styling */
+.nav {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    color: #20a8b4;
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+/* Navigation link list */
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0 5px;
+    padding-bottom: 15px;
+}
+
+.nav ul li {
+    padding: 5px 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+/* links */
+a {
+    width: 100%;
+    font-weight: 700;
+    color: #000;
+}
+
+a:hover,
+a:active{
+    color: #ff5c0f;
+}
+
+/* button */
+button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #20a8b4;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border-style: none;
+    text-align: left;
+    font-size: 1rem;
+}
+button a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+button:hover,
+button:active {
+    background-color: #ff5c0f;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+/* content-area */
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 10px 0;
+}
+
+.img-wrapper{
+    width: 45%;
+}
+
+.img-wrapper img{
+    width: 100%;
+}
+
+.page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Stylization Classes */
+.orange-text {
+    color: #ff5c0f;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+/* desktop styling */
+@media only screen and (min-width: 768px) {
+    .hide-mobile {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    
+    .nav ul li {
+        padding: 5px;
+    }
+
+    .content-area {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    button {
+        width: auto;
+    }
+}
